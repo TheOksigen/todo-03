@@ -15,8 +15,14 @@ app.use(cors())
 app.use(express.json())
 connect()
 
+
+// auth route
 app.use("/auth", authRouter)
+
+//todo route
 app.use("/todo", auth, todoRouter)
+
+//admin route
 app.use("/admin", auth, isAdmin, admin)
 
 
