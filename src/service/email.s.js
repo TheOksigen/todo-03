@@ -30,4 +30,9 @@ async function salam() {
     }
 }
 
+
+async function ok() {
+    console.log("slam");
+    
+}
 salam()
