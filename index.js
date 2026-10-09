@@ -26,6 +26,6 @@ app.use("/todo", auth, todoRouter)
 app.use("/admin", auth, isAdmin, admin)
 
 
-app.listen(3001, () => {
+app.listen(3000, () => {
     console.log(`Example app listening on port ${3000}`);
 });
